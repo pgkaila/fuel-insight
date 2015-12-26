@@ -6,7 +6,41 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="be.piyush.fuelinsight.StatusFragment">
 
-    <TextView android:text="Status will come here" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="5"
+        android:id="@+id/chartEndDate"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/graphDisplay"
+        android:contentDescription="End Date" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="5"
+        android:id="@+id/chartStartDate"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/chartEndDate"
+        android:contentDescription="Start Date" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chartInsight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/chartEndDate"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display"
+        android:id="@+id/graphDisplay"
+        android:layout_below="@+id/chartInsight"
+        android:layout_alignEnd="@+id/chartInsight" />
 </RelativeLayout>
