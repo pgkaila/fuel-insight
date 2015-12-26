@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:ems="10"
+        android:ems="5"
         android:id="@+id/quantity"
         android:layout_below="@+id/amount"
         android:layout_alignStart="@+id/amount" />
@@ -140,5 +140,13 @@
         android:id="@+id/petrolBunkLabel"
         android:layout_below="@+id/timeRefuel"
         android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full tank"
+        android:id="@+id/isFullTankCheckBox"
+        android:layout_alignBottom="@+id/quantity"
+        android:layout_toEndOf="@+id/quantity" />
 
 </RelativeLayout>
