@@ -4,6 +4,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_reserve_data_add">ReserveDataAdd</string>
+    <string name="title_activity_refuel_data_add">RefuelDataAdd</string>
     <string name="title_activity_status">Status</string>
     <string name="title_activity_reserve_list">ReserveList</string>
 </resources>

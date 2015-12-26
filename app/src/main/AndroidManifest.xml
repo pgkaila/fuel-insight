@@ -7,10 +7,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name=".FuelDataAddActivity"
-            android:label="@string/app_name" >
-        </activity>
 
         <provider
             android:name=".data.refuel.FuelProvider"
@@ -37,6 +33,14 @@
                 android:value="be.piyush.fuelinsight.MainActivity" />
         </activity>
         <activity
+            android:name=".FuelDataAddActivity"
+            android:label="@string/title_activity_refuel_data_add"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.piyush.fuelinsight.MainActivity" />
+        </activity>
+        <activity
             android:name=".Status"
             android:label="@string/title_activity_status"
             android:parentActivityName=".MainActivity" >
@@ -44,9 +48,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="be.piyush.fuelinsight.MainActivity" />
         </activity>
+
         <activity
-            android:name=".ReserveList"
-            android:label="@string/title_activity_reserve_list"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

@@ -28,15 +28,7 @@
         android:layout_height="wrap_content"
         android:text="View Status"
         android:id="@+id/viewStatusButton"
-        android:layout_below="@+id/reserveListButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/addRefuelDataButton" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reserve List"
-        android:id="@+id/reserveListButton"
-        android:layout_below="@+id/addRefuelDataButton"
-        android:layout_alignStart="@+id/viewStatusButton"
-        android:singleLine="false" />
 </RelativeLayout>

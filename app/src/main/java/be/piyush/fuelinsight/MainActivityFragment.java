@@ -3,6 +3,7 @@ package be.piyush.fuelinsight;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +23,6 @@ public class MainActivityFragment extends Fragment {
 
     private Button addReserveButton;
     private Button addRefuelDataButton;
-    private Button reserveListButton;
     private Button viewStatusButton;
 
     public MainActivityFragment() {
@@ -34,7 +34,6 @@ public class MainActivityFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
         addRefuelDataButton = (Button) view.findViewById(R.id.addRefuelDataButton);
         addReserveButton = (Button) view.findViewById(R.id.addReserveButton);
-        reserveListButton = (Button) view.findViewById(R.id.reserveListButton);
         viewStatusButton = (Button) view.findViewById(R.id.viewStatusButton);
 
         addRefuelDataButton.setOnClickListener(new View.OnClickListener() {
@@ -49,14 +48,6 @@ public class MainActivityFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ReserveDataAdd.class);
-                startActivity(intent);
-            }
-        });
-
-        reserveListButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ReserveList.class);
                 startActivity(intent);
             }
         });
